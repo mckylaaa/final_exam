@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .bg {
+        background-image: url('images/homepic.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100px;
+        background-position:center;
+      }
+
+      .container2 {
+        background-image: url('images/pic.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100px;
+        background-position:center;
+      } 
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">MC</a>
+                <ul class = "links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li> <a class = "active" href = "#home"> HOME </a> </li> -->
+                </ul>
+            </nav>
+   </header>
+
+   <div class="bg">
+        <img class="img1" src="images/homepic.png" alt="mc">
+        <div class="headtext">
+            <h1>Hello!</h1>
+            <h3>I am Mckyla Valenzuela</h3>
+            <p>Welcome to MC's Creative Hub! Unleashing the power of design to elevate user experiences. Explore a world where form meets function, and every pixel tells a story. Join me on crafting digital landscapes that seamlessly blend aesthetics and usability. Let's redefine user interactions together. Your digital experience starts here.</p>
+        </div>
+    </div>
+
+ <div class="container2">
+     <div class = "pic">
+         <img class="img2" src="images/pic.png" alt="pic">
+     </div>
+ </div>
+ 
+
+   <div id="about">
+
+        <div class="container">
+             <h1 class="about-title">About <span style="color:#FF7D3D;font-weight:bold">Me</span></h1>
+                <p class= "about-txt">
+                    Meet Mckyla, a 3rd year Information Technology student specializing in Web and Mobile Application Development at Bulacan State University. 
+                    She is a passionate UI/UX designer fueled by a creative fervor to craft seamless and engaging user experiences. 
+                    With an eye for aesthetics and a knack for understanding user needs, Mckyla endeavors to blend form and function in the digital realm. 
+                    Eager to design interfaces that not only captivate but also intuitively guide users, she is on a mission to elevate the way we interact with technology. 
+                    Join Mckyla on her journey to reimagine digital landscapes through thoughtful and user-centric design.
+                </p>
+        </div>
+   </div>
+
+   <div id="skills">
+        <div class="roww">
+            <h1 class="skillz"> Skills</h1>
+
+            <div class="card">
+                <div>
+                    <p class="column-title">Graphic Design Skills</p>
+                    <p class="column-txt">Proficiency in graphic design tools like Adobe XD, Sketch, Figma, Photoshop, or Illustrator.
+                        Strong grasp of design principles, including color theory, typography, and composition.</p>
+                </div>
+     
+                <div>
+                    <p class="column-title">User-Centered Design</p>
+                    <p class="column-txt">In UX/UI design, I bring a creative and user-centric approach to crafting digital experiences. With a keen eye for aesthetics, I design interfaces that not only look visually appealing but also prioritize seamless navigation and user interaction.</p>
+                </div> 
+        
+                <div>
+                    <p class="column-title">Wireframing and Prototyping</p>
+                    <p class="column-txt">Skills in creating wireframes to outline the basic structure and layout of interfaces.
+                        Ability to develop interactive prototypes for user testing and feedback.</p>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <div id="projects">
+        <!-- <h1 class="subt">Projects</h1> -->
+
+            <div class="container3">
+                <h1 class="proj">Latest <span style="color:#FF7D3D;font-weight:bold">Project</span></h1>
+
+                <div class="row">
+                    <div class="col1">
+                        <img src="images/bulsuu.png" alt="">
+                    </div>
+
+                        <div class="col2">
+                            <h2 class="project-title">BulSU ALert</h2>
+                            <p>
+                                The “BulSU ALERT” project introduces a user-friendly mobile application designed to boost campus safety. It serves as a reliable emergency response system, delivering timely information on school events, weather updates, and class suspensions directly to users' mobile devices.
+                            </p> 
+                            
+                            <h2 class="features">Key Features</h2>
+                            <!-- <p>
+                                It has a two-way communication channels between emergency responders and users with multimedia features
+                            </p>  -->
+                            <li>It has a two-way communication channels between emergency responders and users with multimedia features</li>
+                            <li>The app promptly notifies students, instructors, and staff about certain announcements within the university.</li>
+
+                        </div>
+                </div>    
+            </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="details">
+                    <h1 class="contactme">Let's Work <span style="color:#FF7D3D;font-weight:bold">Together</span></h1>
+                    <p>Mckyla Valenzuela</p>
+                    <p><a href="https://mail.google.com/mail/u/0/?fs=1&to=mckylafaithvalenzuela0905@gmail.com&tf=cm" target="_blank"> mckylafaithvalenzuela0905@gmail.com </a></p>
+                    <p>Phone Number: 09690799359</p>
+                </div>
+                <div class="contactr">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send a message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> © 2023 by Mckyla Valenzuela </p>
+   </footer> 
+
+</body>
+</html>

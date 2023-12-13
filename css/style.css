@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&family=Roboto:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #1E1E1E;
+    /* background-color: whitesmoke; */
+
+}
+
+
+/* header nav + bg pic  */
+
+header{
+    /* width: 100%;
+    height: 100vh; */
+    background-color: #1E1E1E;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    height: 65px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding: 24px 2%; */
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: right;
+}
+
+.bg img {
+    width:100%;
+}
+
+/* .bg headtext {
+    position:absolute;
+    color:#1E1E1E;
+    left: 10px;
+    top: 10px;
+} */
+
+.container2{
+    width: 100%;
+    height: 100%;
+    margin-top: 36%;
+    background-position: center;
+    position:relative;
+
+}
+
+/* .container2 .pic {
+    max-width: fit-content;
+}  */
+
+.headtext {
+    text-align: justify;
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    margin-left:0px;
+    margin-right:300px;
+    transform: translate(-50%, -50%);
+    color: #2f2f2f;
+    margin-top: 20%;
+    font-size: 30px;
+    font-family: "Poppins";
+  }
+    /* padding-top: 20px; */
+    /* margin-left: 20px;
+    margin-right: 30px; */
+    /* margin-block: 10px; */
+ 
+.headtext h1{
+    font-size: 90px;
+    margin-top: 10px;
+    color: #FF7D3D;
+}
+    
+.headtext p {
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+  
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    position: relative;
+    font-family: "Poppins";
+    /* font-weight: 500; */
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav ul li a::after{
+    content: '';
+    bottom: -6px;
+    left: 0;
+    position: absolute;
+    background: #e3874f;
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+}
+nav ul li a:hover {
+    color: #e3874f;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+.links {
+    padding: 10px 16px 10px 16px;
+    transition: all 0.3 ease 0s;
+    margin-left:140px;
+    margin-right:90px;
+}
+
+.logo {
+    color: whitesmoke;
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size: 23px;
+    cursor: pointer;
+    /* margin-left:160px; */
+    margin-right:600px;
+    /* order: 0;  */
+    margin-left: auto;
+    text-decoration: none;
+   
+}
+
+.logo:hover {
+    color: #e3874f;
+}
+
+
+
+/* ABOUT PAGE */
+
+#about{
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: justify;
+    margin-top: 20%;
+    font-family: "Poppins";
+    top: 20%;
+    left: 45%;
+    margin-left:160px;
+    margin-right:140px;
+    /* transform: translate(-50%, -50%); */
+    color: #2f2f2f;
+}
+
+.container p{
+   padding-top: 70px;
+   font-size: 18px;
+}
+
+/* SKILLS PAGE */
+
+#skills{
+    /* text-align: justify; */
+    background-color: #ffffff;
+    padding: 50px 0;
+    margin-top: 4%;
+    font-family: "Poppins";
+    color: #2f2f2f;
+    margin-left:160px;
+    margin-right:140px;
+    
+    /* padding: 30px 0; */
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    height: 368px;
+}
+.card div{
+    background: #F7F3F1;
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+    border-color: #e3874f;
+    border: 1px;
+    transition: background 0.5s, transform 0.5s; 
+}
+.card div:hover{
+    background: #e3874f;
+    /* color: #F7F3F1; */
+    transform: translateY(-10px);
+}
+
+.column-title:hover, .column-txt:hover {
+    color: whitesmoke;
+}
+
+.column-title, .column-txt {
+    color: #1E1E1E;
+}
+
+.column-title{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.column-txt{
+    text-align: justify;
+    padding-top: 50px;
+    font-size: 18px;
+}
+
+
+
+  /* WORKS PAGE */
+
+#projects{
+    
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: justify;
+    margin-top: 5%;
+    font-family: "Poppins";
+    top: 20%;
+    left: 45%;
+    margin-left:160px;
+    margin-right:140px;
+    color: #2f2f2f;
+}
+
+.project-title, .features {
+    padding-top: 50px;
+    /* font-family: "Anton"; */
+}
+
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    padding-left: 30px;
+    padding-top: 60px;
+    width: 76%;
+    border-radius: 15px;
+}
+.col2{
+    flex-basis: 55%;
+}
+
+.col2 p{
+    padding-top:40px;
+    font-size: 18px;
+}
+
+.col2 li {
+    padding-top:40px;
+    font-size: 18px;
+}
+
+
+
+/* CONTACT PAGE */
+
+#contact{
+    background-color: #ffffff;
+    padding: 50px 0;
+    margin-top: 8%;
+    font-family: "Poppins";
+    color: #1E1E1E;
+    margin-left:160px;
+    margin-right:140px;
+}
+.details{
+    flex-basis: 35%;
+}
+
+.contactr{
+    flex-basis: 60%;
+}
+.details p{
+    margin-top: 10px;
+}
+.contactr form{
+    width: 100%;
+}
+form input, form textarea{
+    font-family: "Poppins";
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    background-color:#e3874f ;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 0;
+    cursor: pointer;
+    outline: #e3874f;
+    color: whitesmoke;
+    float: right;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    font-family: "Poppins";
+    /* position: fixed;  
+    left: 0; 
+    bottom: 0;   */
+    padding: 25px;
+    /* width: 100%; */
+    background-color: #1E1E1E;
+    /* font-size: 14px; */
+    color: whitesmoke;
+    height:65px;
+    text-align: center;
+}
+
+
+.about-title {
+    font-size: 50px;
+}
+
+.roww h1{
+    font-size: 50px;
+}
+
+.container3 h1{
+    font-size: 50px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #skills{
+      width: 100%;
+      display: none;
+      margin-bottom: 20px;
+    }
+
+    .headtext{
+      margin-top: 100%;
+      font-size: 16px;
+    }    
+    .headtext h1{
+        font-size: 15px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+  }
